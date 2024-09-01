@@ -1,0 +1,57 @@
+/* Estilos para el contenedor del dropdown */
+.dropdown-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centra los elementos en el menú desplegable */
+  justify-content: center; /* Centra los elementos verticalmente */
+  position: absolute;
+  background-color: #f0f0f0; /* Fondo gris claro del contenido */
+  width: 100%; /* Ocupa el mismo ancho que el botón desplegable */
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  margin-top: 5px;
+  border-radius: 4px; /* Bordes redondeados para un mejor diseño */
+}
+
+/* Estilos para el botón del dropdown */
+.dropdown-button {
+  background-color: transparent; /* Fondo transparente para el botón */
+  border: none; /* Sin borde */
+  cursor: pointer; /* Cambia el cursor al pasar el ratón */
+  padding: 10px; /* Espaciado interno */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Estilos para el icono */
+.dropdown-icon {
+  font-size: 24px; /* Tamaño del icono */
+  color: #333; /* Color del icono */
+}
+
+/* Estilos para el contenido desplegable */
+.dropdown-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 100%; /* Posiciona el contenido debajo del botón */
+  left: 50%; /* Centra el contenido horizontalmente */
+  transform: translateX(
+    -50%
+  ); /* Ajusta el contenido para que esté perfectamente centrado */
+  background-color: #f0f0f0; /* Fondo del contenido */
+  border: 1px solid #ddd; /* Borde del contenido */
+  border-radius: 4px; /* Bordes redondeados */
+  padding: 10px; /* Espaciado interno */
+  z-index: 1000; /* Asegura que el contenido esté por encima de otros elementos */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra del contenido */
+}
+
+/* Estilos para el texto dentro del contenido desplegable */
+.dropdown-content p {
+  margin: 0; /* Elimina el margen del párrafo */
+  font-size: 14px; /* Tamaño de fuente del texto */
+  color: #333; /* Color del texto */
+}
